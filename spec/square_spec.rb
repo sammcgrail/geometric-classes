@@ -134,3 +134,5 @@ end
 # Is there a way to run the rest of the rspec tests even though one of them fails?
 # or is this not recommended as not useful?
 # research branching in rspec tests(?)
+
+# http://www.chilimath.com/algebra/intro/point/images/quadrants_1.gif
