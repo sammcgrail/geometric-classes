@@ -22,5 +22,13 @@ class Square
     @area = @length * @length
   end
 
+  def contains_point?(x, y)
+    if @length - @x >= 0
+      true
+    else
+      false
+    end
+  end
+
 
 end
