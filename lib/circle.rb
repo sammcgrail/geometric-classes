@@ -4,9 +4,6 @@ class Circle
     @radius = radius
     @x = x
     @y = y
-    # @diameter = diameter
-    # @area = area   # do i need these here?
-    # @perimeter = perimeter
   end
   # Alternate method from attr_reader
   # def radius

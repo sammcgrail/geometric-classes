@@ -24,7 +24,7 @@ class Square
 
   def contains_point?(x, y)
    xval = x.abs
-   yval = y.abs  #do i need to do absolute value?
+   yval = y.abs
    if @x + (0.5 * @length) >= xval && @y + (0.5 * @length) >= yval
       true
     else
