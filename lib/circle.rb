@@ -5,7 +5,7 @@ class Circle
     @radius = radius
     @x = x
     @y = y
-    # @diameter = diameter
+    @diameter = diameter
     # @area = area
     # @perimeter = perimeter
   end
@@ -23,9 +23,9 @@ class Circle
   #   @y
   # end
 
-  # def diameter
-  #   @diameter = @radius * 2
-  # end
+  def diameter
+    @diameter = @radius + @radius
+  end
 
   # def area
   #   #pseudo
