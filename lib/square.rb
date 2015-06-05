@@ -18,5 +18,9 @@ class Square
     @perimeter = @length * 4
   end
 
+  def area
+    @area = @length * @length
+  end
+
 
 end
