@@ -6,7 +6,9 @@ class Square
     @y = y
   end
 
-
+  def width
+    @width = @length
+  end
 
 
 end
