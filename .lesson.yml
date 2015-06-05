@@ -1,0 +1,8 @@
+---
+title: "Ruby Shapes"
+type: "challenge"
+description: "Create Ruby objects for different shapes."
+visibility: "assign"
+progress_attribute: "systems_check_3"
+ignore:
+- "ruby-shapes.md"
