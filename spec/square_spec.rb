@@ -92,7 +92,45 @@ RSpec.describe Square do
       expect(square.contains_point?(50, -51)).to be(false)
     end
 
+    it "returns false for a point outside of the square" do
+      square = Square.new(100)
+      expect(square.contains_point?(-50, -51)).to be(false)
+    end
+
+    it "returns true for a point inside of the square in 2nd quadrant" do
+      square = Square.new(10)
+      expect(square.contains_point?(-2, 2)).to be(true)
+    end
+
+    it "returns true for a point inside of the square in 3rd quadrant" do
+      square = Square.new(10)
+      expect(square.contains_point?(-2, -2)).to be(true)
+    end
+
+    it "returns true for a point inside of the square in 4th quadrant" do
+      square = Square.new(10)
+      expect(square.contains_point?(2, -2)).to be(true)
+    end
 
 
+
+    it "returns false for a point outside of the square in 2nd quadrant" do
+      square = Square.new(1)
+      expect(square.contains_point?(-2, 2)).to be(false)
+    end
+
+    it "returns false for a point outside of the square in 3rd quadrant" do
+      square = Square.new(1)
+      expect(square.contains_point?(-2, -2)).to be(false)
+    end
+
+    it "returns false for a point outside of the square in 4th quadrant" do
+      square = Square.new(1)
+      expect(square.contains_point?(2, -2)).to be(false)
+    end
   end
 end
+
+# Is there a way to run the rest of the rspec tests even though one of them fails?
+# or is this not recommended as not useful?
+# research branching in rspec tests(?)
