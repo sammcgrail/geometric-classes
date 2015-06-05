@@ -1,7 +1,7 @@
 require "rspec"
 require_relative "../lib/square"
 
-DELTA = 0.01
+# DELTA = 0.01  # removes error in terminal saying constant already initialized? Need to use this if not linked with circle_spec.rb
 
 RSpec.describe Square do
   describe "#initialize" do
