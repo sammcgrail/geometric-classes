@@ -79,5 +79,20 @@ RSpec.describe Square do
       square = Square.new(1)
       expect(square.contains_point?(4, 3)).to be(false)
     end
+
+    ## WRITING MORE TESTS TO CHECK contains_point?
+
+    it "returns false for a point outside of the square" do
+      square = Square.new(1)
+      expect(square.contains_point?(5, 5)).to be(false)
+    end
+
+    it "returns false for a point outside of the square" do
+      square = Square.new(100)
+      expect(square.contains_point?(50, -51)).to be(false)
+    end
+
+
+
   end
 end

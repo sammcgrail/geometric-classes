@@ -23,8 +23,8 @@ class Square
   end
 
   def contains_point?(x, y)
-   xval = x
-   yval = y
+   xval = x.abs
+   yval = y.abs  #do i need to do absolute value?
    if @x + (0.5 * @length) >= xval && @y + (0.5 * @length) >= yval
       true
     else
