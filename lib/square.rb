@@ -10,5 +10,13 @@ class Square
     @width = @length
   end
 
+  def diameter
+    @diameter = 1.41421 * @length   #diameter doesnt pass if use sqrt values? or is my square root ruby syntax bad
+  end
+
+  def perimeter
+    @perimeter = @length * 4
+  end
+
 
 end
